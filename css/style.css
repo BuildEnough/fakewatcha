@@ -103,12 +103,6 @@ p {font-family: 'Noto Sans KR', sans-serif;}
     color: #000;
 }
 
-/* .test-btn:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
-} */
-
 .card {
     margin: 2rem;
     width: 30%;
@@ -130,4 +124,24 @@ p {font-family: 'Noto Sans KR', sans-serif;}
   .card-img {
     width: 90%;
     border-radius: 1rem;
+  }
+
+  .top-button {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(88, 88, 88);
+  }
+  
+  .top-button-image {
+    height: 32px;
+    opacity: 0.3;
+    border-radius: 20px;
   }
