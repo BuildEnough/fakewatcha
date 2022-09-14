@@ -6,26 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>홈페이지</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
-    p {font-family: 'Noto Sans KR', sans-serif;}
     .star-rating {width:304px;}
-    .star-rating,.star-rating span {display:inline-block; height:55px; overflow:hidden; background:url(star.png)no-repeat;}
+    .star-rating,.star-rating span {display:inline-block; height:55px; overflow:hidden; background:url(images/star.png)no-repeat;}
     .star-rating span{background-position:left bottom; line-height:0; vertical-align:top; filter: invert(92%) sepia(75%) saturate(1558%) hue-rotate(334deg) brightness(111%) contrast(99%);}
   </style>
-
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <div class="navbar-brand">
-        <img src="logo.png" class="img-fluid"  alt="..." width = '90px'>
+        <img src="images/logo.png" class="img-fluid"  alt="..." width = '90px'>
       </div>
 
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
@@ -86,9 +86,22 @@
           <p class="fs-7"><span class="fw-bold">감독</span> 프랭크 다라본트</p>          
           <p class="fs-7"><span class="fw-bold">출연</span> 팀 로빈스(앤디 듀프레인), 모건 프리먼(엘리스 보이드 레드 레딩)</p>
           <p class="fs-7"><span class="fw-bold">등급</span> [국내] 15세 관람가</p>
+
+          <div class="group_btn">
+            <a href="https://watcha.com/contents/mNdKBkO?utm_campaign=metadata&amp;utm_source=kakao&amp;utm_medium=movie" target="_blank" class="btn_g">
+                <span class="ico_movie ico_watcha"></span>왓챠
+            </a>
+            <a href="https://www.netflix.com/title/70005379" target="_blank" class="btn_g">
+                <span class="ico_movie ico_netflix"></span>넷플릭스
+            </a>
+            <a href="https://www.wavve.com/player/movie?movieid=MV_CD01_WR0000011371" target="_blank" class="btn_g">
+                <span class="ico_movie ico_wavve"></span>웨이브
+            </a>
+          </div>
+
         </div>
       </div>
-      <div><img src="movie1.jpg" class="card-img-top" alt="..." style="width:300px"></div>
+      <div><img src="images/movie1.jpg" class="card-img-top" alt="..." style="width:300px"></div>
     </div>
     
     <div>
