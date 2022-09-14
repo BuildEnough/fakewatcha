@@ -87,7 +87,18 @@
           <p class="fs-7"><span class="fw-bold">출연</span> 팀 로빈스(앤디 듀프레인), 모건 프리먼(엘리스 보이드 레드 레딩)</p>
           <p class="fs-7"><span class="fw-bold">등급</span> [국내] 15세 관람가</p>
 
-          <div class="group_btn">
+          <div class="tooltip_info">
+            <a href="#none" class="link_tooltip">영화정보<span class="ico_movie ico_info"></span></a>
+            <div class="tooltipinfo_layer">
+                <p class="txt_tooltip">
+                    데이터 제공처 현황에 따라 본 페이지 내 정보와 OTT 플랫폼에서 제공하는 콘텐츠가 상이할 수 있습니다.<br>
+                    영화 정보를 확인 후 이용바랍니다.
+                </p>
+                <a href="#none" class="link_close"><span class="ico_movie ico_close">닫기</span></a>
+            </div>
+          </div>
+
+          <div class="group_btn" style="margin-top: 10px;">
             <a href="https://watcha.com/contents/mNdKBkO?utm_campaign=metadata&amp;utm_source=kakao&amp;utm_medium=movie" target="_blank" class="btn_g">
                 <span class="ico_movie ico_watcha"></span>왓챠
             </a>
@@ -101,9 +112,17 @@
 
         </div>
       </div>
-      <div><img src="images/movie1.jpg" class="card-img-top" alt="..." style="width:300px"></div>
+      <div><img src="images/movie1.jpg" class="card-img-top card" alt="..." style="width:300px"></div>
     </div>
     
+
+    
+    
+    
+
+
+
+
     <div>
       <h2>줄거리</h2>
       <hr style="width:400px;">
@@ -158,6 +177,14 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 </html>
